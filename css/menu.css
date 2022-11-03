@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    padding: 25px 50px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul > *{
+    cursor: pointer;
+    margin: 0px 15px;
+    color: #FF8D2A;
+}
+
+a{
+    color: #FF8D2A;
+    text-decoration: none;
+}
+
+nav button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: #FF8D2A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+nav h1{
+    font-size: 1.5rem;
+}
+
+nav h1 span{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: #FF8D2A;
+}
+
+#cart-items-count{
+    position: relative;
+    top: -18px;
+    left: -10px;
+    font-size: 0.8rem;
+}
+
+.active{
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    padding: 50px 50px 0px 50px;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: #FEF5F8;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+}
+
+.left-section{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px solid #FF8D2A;
+}
+
+.left-section > p{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: #FF8D2A;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.right-section{
+    width: 85%;
+    height: 100%;
+    padding-left: 0px;
+    overflow-y: scroll;
+    
+}
+
+#show_vegpizza{
+    display: block;
+}
+
+#show_nonvegpizza, #show_offeredpizza, #show_combopizza{
+    display: none;
+}
+
+.right-section::-webkit-scrollbar {
+    display: none;
+}
+  
+.right-section {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.right-section h1{
+    padding: 15px 25px;
+    font-size: 1.3rem;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.right-section p{
+    padding-left: 15px;
+}
+
+.card{
+    margin: 20px;
+    background-color: #FFF;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+
+.card-content h1{
+    padding: 0px 10px;
+    font-size: 1.2rem;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    width: 100%;
+    height: 35%;
+}
+
+.card-content p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+.card img{
+    height: 65%;
+    width: 100%;
+}
+
+.veg-food-mark{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #129A1F;
+    position: absolute;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.veg-food-mark .circle{
+    background-color: #129A1F;
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
+.add-to-cart-icon{
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 5px;
+    margin-top: 15px;
+    color: #FF8D2A;
+    font-size: 1.5rem;
+}
+
+.fa{
+    color: #FF8D2A;
+}
+
+

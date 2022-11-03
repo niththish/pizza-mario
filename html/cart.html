@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pizza Mario</title>
+</head>
+<body>
+    <nav>
+        <h1>Welcome <span>User</span></h1>
+        <ul>
+            <li><i class="fas fa-home"></i> <a href="./home.html">Home</a></li>
+            <li><i class="fa fa-cutlery" aria-hidden="true"></i> <a href="./menu.html">Menu</a></i></li>
+            <li class="active"><i class="fas fa-shopping-cart"><span id="cart-items-count">0</span></i> <a href="#">cart</a></i></li>
+        </ul>
+        <button onclick="logout()">logout</button>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <section class="left-section">
+                <h1>Order Menu</h1>
+            </section>
+            <section class="right-section">
+                <div class="info-card">
+                    <h1>BILL</h1>
+                    <div class="card-content">
+
+                    </div>
+                    <button onclick="place_order()">PLACE ORDER</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <dialog id="place-order-dialog">
+        <button> <i class="fas fa-window-close" aria-hidden="true"></i> </button>
+        <p>Order placed</p>
+    </dialog>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
+
+
+<template id="template-1">
+    <div class="item-card">
+        <div class="item">
+            <p id="item-name">ITALIAN PIZZA</p>
+            <i class="fa fa-minus" aria-hidden="true"></i>
+            <span>1</span>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+        <div class="amt">
+            <p><i class="fa fa-indian-rupee"></i><span id="item-amt">500</span></p>
+        </div>                
+    </div>
+</template>
+
+
+<template id="template-2">
+    <div class="info-item">
+        <p>
+            <span id="item-name">Italian pizza</span>
+            <span id="count">1</span>
+            <span>x</span>
+            <span id="amount">250</span>
+            <span>=</span>
+            <span id="total">250</span>
+        </p>
+    </div>
+</template>

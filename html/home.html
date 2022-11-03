@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pizza Mario</title>
+</head>
+<body>
+    <nav>
+        <h1>Welcome <span>User</span></h1>
+        <ul>
+            <li class="active"><i class="fas fa-home"></i> <a href="#">Home</a></li>
+            <li><i class="fa fa-cutlery" aria-hidden="true"></i> <a href="./menu.html">Menu</a></i></li>
+            <li><i class="fas fa-shopping-cart"><span id="cart-items-count">0</span></i> <a href="./cart.html">cart</a></i></li>
+        </ul>
+        <button onclick="logout()">logout</button>
+    </nav>
+    <div class="container">
+        <section class="section1">
+            <p>Deals of the Day</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="../assets/sausage pizza.jpg" alt="">
+                    <div class="horizontal-card-content">
+                        <div class="veg-food-mark">
+                            <span class="circle"></span>
+                        </div>
+                        <h1 class="pizza-name">Sausage pizza</h1>
+                        <p>
+                            <span class="striked-text"><i class="fa fa-indian-rupee"></i>350</span>
+                            <span class="amt_details"><i class="fa fa-indian-rupee"></i>250</span>
+                        </p>
+                        <p class="discount-text">Discount: 29%</p>
+                        <i class="fas fa-plus-circle add-to-cart-icon"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/farmhouse-pizza.jpg" alt="">
+                    <div class="horizontal-card-content">
+                        <div class="veg-food-mark">
+                            <span class="circle"></span>
+                        </div>
+                        <h1 class="pizza-name">farm house</h1>
+                        <p>
+                            <span class="striked-text"><i class="fa fa-indian-rupee"></i>349</span>
+                            <span class="amt_details"><i class="fa fa-indian-rupee"></i>195</span>
+                        </p>
+                        <p class="discount-text">Discount: 45%</p>
+                        <i class="fas fa-plus-circle add-to-cart-icon"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/chicken dominator.jpg" alt="">
+                    <div class="horizontal-card-content">
+                        <div class="non-veg-food-mark">
+                            <span class="circle"></span>
+                        </div>
+                        <h1 class="pizza-name">chicken dominator</h1>
+                        <p>
+                            <span class="striked-text"><i class="fa fa-indian-rupee"></i>459</span>
+                            <span class="amt_details"><i class="fa fa-indian-rupee"></i>319</span>
+                        </p>
+                        <p class="discount-text">Discount: 31%</p>
+                        <i class="fas fa-plus-circle add-to-cart-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <p>People's Choice</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="../assets/sausage pizza.jpg" alt="">
+                    <div class="section-2-veg-food-mark">
+                        <span class="circle"></span>
+                    </div>
+                    <div class="vertical-card-content">
+                        <h1 class="pizza-name">Sausage pizza</h1>
+                        <p>
+                            <span class="amt_details"><i class="fa fa-indian-rupee"></i>250</span>
+                            <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/corn pizza.webp" alt="">
+                    <div class="section-2-veg-food-mark">
+                        <span class="circle"></span>
+                    </div>
+                    <div class="vertical-card-content">
+                        <h1 class="pizza-name">corn pizza</h1>
+                        <p>
+                            <span class="amt_details"><i class="fa fa-indian-rupee"></i>269</span>
+                            <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/chicken dominator.jpg" alt="">
+                    <div class="section-2-non-veg-food-mark">
+                        <span class="circle"></span>
+                    </div>
+                    <div class="vertical-card-content">
+                        <h1 class="pizza-name">chicken dominator</h1>
+                        <p>
+                            <span class="amt_details"><i class="fa fa-indian-rupee"></i>319</span>
+                            <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/home.js"></script>
+</body>
+</html>

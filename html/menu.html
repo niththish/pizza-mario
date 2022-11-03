@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pizza Mario</title>
+</head>
+<body>
+    <nav>
+        <h1>Welcome <span>User</span></h1>
+        <ul>
+            <li><i class="fas fa-home"></i> <a href="./home.html">Home</a></li>
+            <li class="active"><i class="fa fa-cutlery" aria-hidden="true"></i> <a href="#">Menu</a></i></li>
+            <li><i class="fas fa-shopping-cart"><span id="cart-items-count">0</span></i> <a href="./cart.html">cart</a></i></li>
+        </ul>
+        <button onclick="logout()">logout</button>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <section class="left-section">
+                <p class="active" onclick="show_vegpizza()">veg<br>pizza</p>
+                <p onclick="show_nonvegpizza()">non veg<br>pizza</p>
+                <p onclick="show_offeredpizza()">offered<br>price</p>
+            </section>
+            
+            <section class="right-section" id="show_vegpizza">
+                <h1>veg pizza</h1>
+                <div class="cards">
+                    <div class="card">
+                        <img src="../assets/sausage pizza.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">Sausage pizza</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>250</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/corn pizza.webp" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">Corn pizza</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>269</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/margherita.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">margherita pizza</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>191</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/farmhouse-pizza.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">farm house</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>195</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/mexican green wave.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">mexican green wave</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>385</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/peppy-paneer-pizza.webp" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">peppy panner</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>385</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/extravaganza.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">extravaganza pizza</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>499</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+
+            <section class="right-section" id="show_nonvegpizza">
+                <h1>non veg pizza</h1>
+                <div class="cards">
+                    
+                    <div class="card">
+                        <img src="../assets/non veg supreme.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">non veg supreme</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>555</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/chicken dominator.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">chicken dominator</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>319</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/barbeque.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">pepper barbecue</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>329</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/goldendelight.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">golden delight</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>379</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="right-section" id="show_offeredpizza">
+                <h1>offered pizza</h1>
+                <div class="cards">
+                    <div class="card">
+                        <img src="../assets/sausage pizza.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">Sausage pizza</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>250</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/farmhouse-pizza.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">farm house</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>195</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../assets/chicken dominator.jpg" alt="">
+                        <div class="card-content">
+                            <h1 class="pizza-name">chicken dominator</h1>
+                            <p>
+                                <span class="amt_details"><i class="fa fa-indian-rupee"></i>319</span>
+                                <i class="fa fa-plus-circle add-to-cart-icon" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

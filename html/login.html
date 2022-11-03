@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Pizza Mario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left-section">
+                <div class="content-1">
+                    <p>Welcome to<br><span>PIZZA MARIO</span></p>
+                </div>
+                <div class="content-2">
+                    <p class="cosmic-text">are u ready<br>to taste the best pizza's</p>
+                    <div class="options">
+                        <button onclick="showLogin()" id="login_opt_btn" class="active">login</button>
+                        <button onclick="showSignup()" id="signup_opt_btn">signup</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="card" id="card">
+                    <div class="login" id="login">
+                        <p>LOGIN</p>
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input id="login_username" class="input-field" type="text" placeholder="username">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-lock icon"></i>
+                            <input id="login_password" class="input-field" type="password" placeholder="password">
+                        </div>
+                        <button class="form-button" onclick="login()">LOGIN</button>
+                    </div>
+    
+                    <div class="signup" id="signup">
+                        <p>SIGNUP</p>
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input id="signup_username" class="input-field" type="text" placeholder="username">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-lock icon"></i>
+                            <input id="signup_password" class="input-field" type="password" placeholder="password">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-mobile icon"></i>
+                            <input id="signup_mobile_number" class="input-field" type="tel" placeholder="mobile number">
+                        </div>
+                        <button class="form-button" onclick="signup()">SIGNUP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
