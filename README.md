@@ -12,6 +12,10 @@ The application has the following features
   <li>Bill calculation</li>
 </ul>
 
-
+### `design`
+<div>
+<img src="https://github.com/niththish/Designs/blob/main/pizza%20app/login.png?raw=true" width="45%">
+<img src="https://github.com/niththish/Designs/blob/main/pizza%20app/home.png?raw=true" width="45%">
+</div>
 ### `NOTE`
 The application does not contain a responsive design for mobile devices.
