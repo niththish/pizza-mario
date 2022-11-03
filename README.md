@@ -13,7 +13,7 @@ The application has the following features
 </ul>
 
 ### `design`  
-  <div style="background:red">
+  <div>
     <img src="https://github.com/niththish/Designs/blob/main/pizza%20app/login.png?raw=true" width="45%">
     <img src="https://github.com/niththish/Designs/blob/main/pizza%20app/home.png?raw=true" width="45%">
    </div>
