@@ -14,13 +14,13 @@ The application has the following features
 
 ### `design`  
   <div>
-    <img src="https://github.com/niththish/Designs/blob/main/pizza%20app/login.png?raw=true" width="45%">
-    <img src="https://github.com/niththish/Designs/blob/main/pizza%20app/home.png?raw=true" width="45%">
+    <img src="https://github.com/niththish/Designs/blob/main/pizza%20mario%20design/login.png?raw=true" width="45%">
+    <img src="https://github.com/niththish/Designs/blob/main/pizza%20mario%20design/home.png?raw=true" width="45%">
    </div>
    
    <div>
-     <img src="https://github.com/niththish/Designs/blob/main/pizza%20app/menu.png?raw=true" width="45%">
-     <img src="https://github.com/niththish/Designs/blob/main/pizza%20app/cart.png?raw=true" width="45%">
+     <img src="https://github.com/niththish/Designs/blob/main/pizza%20mario%20design/menu.png?raw=true" width="45%">
+     <img src="https://github.com/niththish/Designs/blob/main/pizza%20mario%20design/cart.png?raw=true" width="45%">
    </div>
        
 ### `NOTE`
